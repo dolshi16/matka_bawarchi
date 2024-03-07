@@ -11,6 +11,7 @@ const BestSellerCard = () => {
             Chinese Tadka
           </Typography>
           <label className="veglabel">🥑 Veg</label>
+          <label className="veglabel">🥑 Veg</label>
         </Grid>
       </Grid>
     </Box>
