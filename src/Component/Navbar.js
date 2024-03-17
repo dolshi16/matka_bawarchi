@@ -9,6 +9,8 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
+import {phoneIcon,cartIcon,searchIcon,userIcon} from "./assets"
+
 
 const Navbar = () => {
   const [age, setAge] = useState("");
@@ -30,24 +32,24 @@ const Navbar = () => {
             </Box>
           </Grid>
           <Grid item className="flexItem" columnGap={3}>
-            <Box className="flexItem">
-              <img alt="Call" />
+            <Box className="flexItem" alignItems="center" columnGap={1}>
+              <img width={"30px"} alt="Call" src={phoneIcon} />
               <Typography fontSize={14} fontWeight="700">
                 Call Us At
                 <br />
                 180020067
               </Typography>
             </Box>
-            <Box>
-              <img alt="search" />
+            <Box display="grid" justifyContent="center">
+              <img src= {searchIcon} alt="search" />
               <Typography>Search</Typography>
             </Box>
             <Box>
-              <img alt="cart" />
+              <img alt="cart" src={cartIcon} />
               <Typography>cart</Typography>
             </Box>
             <Box>
-              <img alt="profile" />
+              <img alt="profile" src={userIcon} />
             </Box>
           </Grid>
         </Grid>

@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 const BestSellerCard = () => {
   const navigate=useNavigate()
   const handleProductDetail=(e)=>{
-    // console.log("LetsCheck");
     navigate('/productDetail');
     
   }
