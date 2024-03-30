@@ -10,7 +10,7 @@ const App = () => {
     <BrowserRouter>
      <Routes>
      <Route exact path="/" element={<Homepage />} />
-      <Route path="/productDetail" element={<ProductDetailPage />} />
+      <Route path="/productDetail/:id" element={<ProductDetailPage />} />
       <Route path="/cart" element={<Cart />} />
       </Routes>
      <Box>

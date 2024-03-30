@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import {phoneIcon,cartIcon,searchIcon,userIcon} from "./assets"
+import { CurrentLocation } from "../CommonComponent/CurrentLocation";
 
 
 const Navbar = () => {
@@ -26,9 +27,7 @@ const Navbar = () => {
             <img alt="logo" />
             <Box>
               <Typography fontSize={12}>Delvering At</Typography>
-              <Typography fontSize={14} fontWeight="700">
-                Surat
-              </Typography>
+                <CurrentLocation/>
             </Box>
           </Grid>
           <Grid item className="flexItem" columnGap={3}>

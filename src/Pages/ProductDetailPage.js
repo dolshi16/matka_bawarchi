@@ -1,34 +1,60 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Box, Button, Container, Grid, Typography } from '@mui/material'
 import Navbar from "../Component/Navbar"
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
+import { BestSellerData } from "../assets/data/BestSellerData";
+import { SimplePopUp } from '../CommonComponent/SimplePopUp';
 const ProductDetailPage = () => {
-  const navigate=useNavigate()
-    const handleAddtoCart=()=>{
-      navigate("/cart")
-    }
+  const navigate = useNavigate()
+  const {id}=useParams()
+  const [filteredCard,setFilteredCard]=useState(null)
+  const [open,setOpen]=useState(false)
+  
+  useEffect(()=>{
+   handleFilterFoodCard()
+  },[id])
+
+  const handleFilterFoodCard=()=>{
+    const filteredData=BestSellerData.filter((item)=>item.id==id)
+    setFilteredCard(filteredData[0])
+  }
+  // const handleAddtoCart = () => {
+  //   navigate("/cart")
+  // }
+  const handleDialogueBoxOpen=()=>{
+    setOpen(true)
+  }
+  const handleClose=()=>{
+    setOpen(false)
+  }
   return (
    <>
    <Navbar/>
    <Box>
     <Container>
-      <Grid container direction='row'>
+      {
+        filteredCard ? <Grid container direction='row'>
         <Grid xs={6} item>
-          <img width={"100%"} className='productImage' src="https://rp-media.faasos.io/catalog/images/WHTP0IVCRM.jpeg" alt='Dish'/>
+          <img width={"100%"} className='productImage' src={filteredCard.image} alt='Dish'/>
         </Grid>
         <Grid xs={6} item>
-          <Typography variant='h4' fontWeight="bold">Lazeez Bhuna Murgh Biryani (Dum Chicken Biryani - Serves 1)</Typography>
+          <Typography variant='h4' fontWeight="bold">{filteredCard.title}</Typography>
          <Typography>
-         (Boneless, Served with 1 Gulab Jamun & Mint Raita) In this culinary jewel from Behrouz, Tender chicken pieces are marinated 
-          with exuberant bhuna spices that are freshly ground and dum pukht with aromatic rice.Read Less
+         {filteredCard.desc}
          </Typography>
-         <Typography>Rating : ❤4.3</Typography>
+         <Typography>Rating : ❤{filteredCard.rating}</Typography>
          <Box display={'flex'} justifyContent='space-between' alignItems="center">
-          <Typography>Rs 329</Typography>
-          <Button className='AddBtn' onClick={handleAddtoCart}>Add</Button>
+          <Typography>{filteredCard.price}</Typography>
+          <Button className='AddBtn' variant="contained" color="success" onClick={handleDialogueBoxOpen}>Add</Button>
          </Box>
         </Grid>
-      </Grid>
+        <SimplePopUp
+        selectedValue={filteredCard}
+        open={open}
+        onClose={handleClose}
+        />
+      </Grid>:"Loading"
+      }
     </Container>
    </Box>
    </>

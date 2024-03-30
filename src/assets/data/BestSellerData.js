@@ -1,4 +1,6 @@
 import chinese from "../img/img1.png"
+import burger from "../img/burger.png"
+import fries from "../img/fries.png"
 export const BestSellerData=[
     {
         id: 1,
@@ -6,7 +8,28 @@ export const BestSellerData=[
         desc: "Chinese food flowered with lots of spices and curd. Feeling hungry? Taste and try it.",
         price: "14.99",
         foodtype: "veg",
-        image: chinese
+        image: chinese,
+        rating:"4.5",
+        extras:[
+            {
+                subId:1,
+                name:"Coca ColdDrink",
+                price:"112",
+                isSelected:true
+            },
+            {
+                subId:2,
+                name:"ColdCoffee",
+                price:"12",
+                isSelected:false
+            },
+            {
+                subId:3,
+                name:"Choclate Shake",
+                price:"1232",
+                isSelected:false
+            }
+        ]
     },
     {
         id: 2,
@@ -14,7 +37,28 @@ export const BestSellerData=[
         desc: "Experience the taste of Italy with our delicious pasta served with rich tomato sauce.",
         price: "12.99",
         foodtype: "veg",
-        image: chinese
+        image: burger,
+        rating:"4.5",
+        extras:[
+            {
+                subId:1,
+                name:"Coca ColdDrink",
+                price:"112",
+                isSelected:false
+            },
+            {
+                subId:2,
+                name:"ColdCoffee",
+                price:"12",
+                isSelected:false
+            },
+            {
+                subId:3,
+                name:"Choclate Shake",
+                price:"1232",
+                isSelected:false
+            }
+        ]
     },
     {
         id: 3,
@@ -22,7 +66,28 @@ export const BestSellerData=[
         desc: "Indulge in the flavors of Mexico with our spicy tacos filled with savory meat and fresh vegetables.",
         price: "10.99",
         foodtype: "nonveg",
-        image: chinese
+        image: chinese,
+        rating:"4.5",
+        extras:[
+            {
+                subId:1,
+                name:"Coca ColdDrink",
+                price:"112",
+                isSelected:false
+            },
+            {
+                subId:2,
+                name:"ColdCoffee",
+                price:"12",
+                isSelected:false
+            },
+            {
+                subId:3,
+                name:"Choclate Shake",
+                price:"1232",
+                isSelected:false
+            }
+        ]
     },
     {
         id: 4,
@@ -30,7 +95,28 @@ export const BestSellerData=[
         desc: "Get ready for a burst of Indian flavors with our aromatic curry served with fluffy naan bread.",
         price: "16.99",
         foodtype: "veg",
-        image: chinese
+        image: burger,
+        rating:"4.5",
+        extras:[
+            {
+                subId:1,
+                name:"Coca ColdDrink",
+                price:"112",
+                isSelected:false
+            },
+            {
+                subId:2,
+                name:"ColdCoffee",
+                price:"12",
+                isSelected:false
+            },
+            {
+                subId:3,
+                name:"Choclate Shake",
+                price:"1232",
+                isSelected:false
+            }
+        ]
     },
     {
         id: 5,
@@ -38,7 +124,28 @@ export const BestSellerData=[
         desc: "Satisfy your cravings with our juicy beef burger topped with melted cheese and crispy bacon.",
         price: "9.99",
         foodtype: "nonveg",
-        image: chinese
+        image: fries,
+        rating:"4.5",
+        extras:[
+            {
+                subId:1,
+                name:"Coca ColdDrink",
+                price:"112",
+                isSelected:false
+            },
+            {
+                subId:2,
+                name:"ColdCoffee",
+                price:"12",
+                isSelected:false
+            },
+            {
+                subId:3,
+                name:"Choclate Shake",
+                price:"1232",
+                isSelected:false
+            }
+        ]
     },
     {
         id: 6,
@@ -46,7 +153,28 @@ export const BestSellerData=[
         desc: "Experience the elegance of Japan with our fresh sushi rolls served with soy sauce and wasabi.",
         price: "18.99",
         foodtype: "nonveg",
-        image: chinese
+        image: chinese,
+        rating:"4.5",
+        extras:[
+            {
+                subId:1,
+                name:"Coca ColdDrink",
+                price:"112",
+                isSelected:false
+            },
+            {
+                subId:2,
+                name:"ColdCoffee",
+                price:"12",
+                isSelected:false
+            },
+            {
+                subId:3,
+                name:"Choclate Shake",
+                price:"1232",
+                isSelected:false
+            }
+        ]
     },
     {
         id: 7,
@@ -54,7 +182,28 @@ export const BestSellerData=[
         desc: "Dive into the Mediterranean cuisine with our assortment of hummus, falafel, and tzatziki served with warm pita bread.",
         price: "20.99",
         foodtype: "veg",
-        image: chinese
+        image: burger,rating:"4.5",
+        extras:[
+            {
+                subId:1,
+                name:"Coca ColdDrink",
+                price:"112",
+                isSelected:false
+            },
+            {
+                subId:2,
+                name:"ColdCoffee",
+                price:"12",
+                isSelected:false
+            },
+            {
+                subId:3,
+                name:"Choclate Shake",
+                price:"1232",
+                isSelected:false
+            }
+        ]
+
     },
     {
         id: 8,
@@ -62,7 +211,28 @@ export const BestSellerData=[
         desc: "Transport your taste buds to Thailand with our flavorful curry infused with coconut milk and aromatic spices.",
         price: "15.99",
         foodtype: "veg",
-        image: chinese
+        image: chinese,
+        rating:"4.5",
+        extras:[
+            {
+                subId:1,
+                name:"Coca ColdDrink",
+                price:"112",
+                isSelected:false
+            },
+            {
+                subId:2,
+                name:"ColdCoffee",
+                price:"12",
+                isSelected:false
+            },
+            {
+                subId:3,
+                name:"Choclate Shake",
+                price:"1232",
+                isSelected:false
+            }
+        ]
     },
     {
         id: 9,
@@ -70,7 +240,28 @@ export const BestSellerData=[
         desc: "Indulge in the sophistication of France with our delicate crepes drizzled in orange sauce and flambéed with Grand Marnier.",
         price: "22.99",
         foodtype: "veg",
-        image: chinese
+        image: chinese,
+        rating:"4.5",
+        extras:[
+            {
+                subId:1,
+                name:"Coca ColdDrink",
+                price:"112",
+                isSelected:false
+            },
+            {
+                subId:2,
+                name:"ColdCoffee",
+                price:"12",
+                isSelected:false
+            },
+            {
+                subId:3,
+                name:"Choclate Shake",
+                price:"1232",
+                isSelected:false
+            }
+        ]
     },
     {
         id: 10,
@@ -78,6 +269,27 @@ export const BestSellerData=[
         desc: "Enjoy a taste of Greece with our succulent gyro filled with tender meat, fresh veggies, and creamy tzatziki sauce.",
         price: "17.99",
         foodtype: "nonveg",
-        image: chinese
+        image: fries,
+        rating:"4.5",
+        extras:[
+            {
+                subId:1,
+                name:"Coca ColdDrink",
+                price:"112",
+                isSelected:false
+            },
+            {
+                subId:2,
+                name:"ColdCoffee",
+                price:"12",
+                isSelected:false
+            },
+            {
+                subId:3,
+                name:"Choclate Shake",
+                price:"1232",
+                isSelected:false
+            }
+        ]
     }
 ]
